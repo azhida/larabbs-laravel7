@@ -29,4 +29,5 @@ Route::post('email/resend', 'Auth\VerificationController@resend')->name('verific
 
 /************************** Auth::routes() end ***************************/
 
+Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
 
